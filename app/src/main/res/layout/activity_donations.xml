@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/Donations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_above="@id/bottom_navigation">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textDonations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/donations"
+                android:textFontWeight="600"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textChurchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/gracewell_methodist_church"
+                android:textColor="#2792C4"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDonations" />
+
+            <TextView
+                android:id="@+id/textDonPara1"
+                android:layout_width="349dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/we_only_accept_cash_gifts_in_person_at_the_church_or_electronic_funds_transfers_in_order_to_protect_the_security_of_your_personal_information_we_regret_any_inconvenience_and_are_considering_more_payment_methods_going_forward"
+                android:textFontWeight="400"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textChurchTitle" />
+
+            <ImageView
+                android:id="@+id/imgChurchLogo"
+                android:layout_width="108dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintStart_toStartOf="@+id/textDonPara2"
+                app:layout_constraintTop_toBottomOf="@+id/textChurchTitle"
+                tools:src="@drawable/churchlogo"
+                android:contentDescription="@string/church_logo" />
+
+            <TextView
+                android:id="@+id/textDonPara2"
+                android:layout_width="241dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/when_making_a_donation_you_can_specify_your_offering_in_the_additional_remarks_field_you_can_choose_from_the_options_general_peace_wave_sheaf_burnt_or_sin_offering"
+                android:textFontWeight="400"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDonPara1" />
+
+            <TextView
+                android:id="@+id/textDonPara3"
+                android:layout_width="349dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/please_ensure_you_double_check_the_bank_details_as_we_will_not_be_liable_if_the_money_gets_sent_to_the_wrong_account"
+                android:textFontWeight="400"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDonPara2" />
+
+            <TextView
+                android:id="@+id/textAccountDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/account_details"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDonPara3" />
+
+            <TextView
+                android:id="@+id/lblBankNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/bank_name"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toStartOf="@+id/textAccountDetails"
+                app:layout_constraintTop_toBottomOf="@+id/textAccountDetails" />
+
+            <TextView
+                android:id="@+id/textBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/nedbank"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/lblBankNameID"
+                app:layout_constraintTop_toBottomOf="@+id/lblBankNameID" />
+
+            <TextView
+                android:id="@+id/lblBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28sp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/branch_name"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toEndOf="@+id/textAccountDetails"
+                app:layout_constraintTop_toBottomOf="@+id/textAccountDetails" />
+
+            <TextView
+                android:id="@+id/textBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/cresta"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/lblBranchName"
+                app:layout_constraintTop_toBottomOf="@+id/lblBranchName" />
+
+            <TextView
+                android:id="@+id/lblBranchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/branch_code"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/textBankName"
+                app:layout_constraintTop_toBottomOf="@+id/textBankName" />
+
+            <TextView
+                android:id="@+id/textBranchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/_198765"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/lblBranchCode"
+                app:layout_constraintTop_toBottomOf="@+id/lblBranchCode" />
+
+            <TextView
+                android:id="@+id/lblAccountType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/account_type"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/textBranchName"
+                app:layout_constraintTop_toBottomOf="@+id/textBranchName" />
+
+            <TextView
+                android:id="@+id/textAccountType"
+                android:layout_width="54dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/current_account"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/lblAccountType"
+                app:layout_constraintTop_toBottomOf="@+id/lblAccountType" />
+
+            <TextView
+                android:id="@+id/lblAccountHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/account_holder"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/textBranchCode"
+                app:layout_constraintTop_toBottomOf="@+id/textBranchCode" />
+
+            <TextView
+                android:id="@+id/textAccountHolder"
+                android:layout_width="99dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/gracewell_methodist_church_account_holder"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/lblAccountHolder"
+                app:layout_constraintTop_toBottomOf="@+id/lblAccountHolder" />
+
+            <TextView
+                android:id="@+id/lblAccountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/account_number"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/textAccountType"
+                app:layout_constraintTop_toBottomOf="@+id/textAccountType" />
+
+            <TextView
+                android:id="@+id/textAccountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/_1176555073"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/lblAccountNumber"
+                app:layout_constraintTop_toBottomOf="@+id/lblAccountNumber" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

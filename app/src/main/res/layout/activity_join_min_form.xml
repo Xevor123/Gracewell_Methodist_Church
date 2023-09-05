@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_alignBottom="@id/bottom_navigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnJoinMinFormGoBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:drawableStart="@drawable/vector_3"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/go_back"
+                android:textFontWeight="700"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/txtJoinMinFormTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/join_ministry"
+                android:textFontWeight="600"
+                android:textSize="20sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnJoinMinFormGoBack" />
+
+            <TextView
+                android:id="@+id/lblJoinMinFormFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/full_name"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinFormTitle" />
+
+            <EditText
+                android:id="@+id/txtJoinMinFormFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:autofillHints="name"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblJoinMinFormFullName" />
+
+            <TextView
+                android:id="@+id/lblJoinMinFormEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/email"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinFormFullName" />
+
+            <EditText
+                android:id="@+id/txtJoinMinFormEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:autofillHints="emailAddress"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblJoinMinFormEmail" />
+
+            <TextView
+                android:id="@+id/lblJoinMinFormPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/cell_phone"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinFormEmail" />
+
+            <EditText
+                android:id="@+id/txtJoinMinFormPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:autofillHints="phone"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/cell_phone_number"
+                android:inputType="phone"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblJoinMinFormPhoneNum" />
+
+            <TextView
+                android:id="@+id/lblJoinMinFormDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/date_of_birth"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinFormPhoneNum" />
+
+            <EditText
+                android:id="@+id/txtJoinMinDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/dd_mm_yyyy"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblJoinMinFormDOB" />
+
+            <TextView
+                android:id="@+id/lblJoinMinFormAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/address"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinDOB" />
+
+            <EditText
+                android:id="@+id/txtJoinMinFormAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:autofillHints="postalAddress"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblJoinMinFormAddress" />
+
+            <TextView
+                android:id="@+id/lblJoinMinFormAddNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/additional_notes"
+                android:textColor="#2792C4"
+                android:textFontWeight="700"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinFormAddress" />
+
+            <EditText
+                android:id="@+id/txtJoinMinFormAddNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:gravity="start|top"
+                android:hint="@string/type_additional_notes_here"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:textFontWeight="400"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblJoinMinFormAddNotes" />
+
+            <RadioGroup
+                android:id="@+id/btnGrpJoinMinChoices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJoinMinFormAddNotes">
+
+                <RadioButton
+                    android:id="@+id/radBtnGTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/g_team"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/radBtnSongster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/songster"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/radBtnAssInt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/internship"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/radBtnPastor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/pastor"
+                    android:textSize="11sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnJoinMinFormSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/submit"
+                android:textFontWeight="700"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGrpJoinMinChoices"
+                tools:ignore="SmallSp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

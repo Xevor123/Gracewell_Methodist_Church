@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_above="@id/bottom_navigation"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtJoinMinAssInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Assistant Internship"
+                android:textFontWeight="600"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtGteam"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/g_team"
+                android:textAlignment="center"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/txtSongster"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtJoinMinAssInt" />
+
+            <TextView
+                android:id="@+id/txtSongster"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/songster"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@id/txtAssInt"
+                app:layout_constraintStart_toEndOf="@id/txtGteam"
+                app:layout_constraintTop_toBottomOf="@id/txtJoinMinAssInt" />
+
+            <TextView
+                android:id="@+id/txtAssInt"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/assistant_internship"
+                android:textAlignment="center"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtSongster"
+                app:layout_constraintTop_toBottomOf="@id/txtJoinMinAssInt" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="357dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/txtSongster"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtJoinMinAssIntText"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:text="The Church Ministry Assistant Intern is a vital member of the GraceWell Methodist Church team, providing valuable support and assistance in various ministry areas. This internship offers a unique opportunity for individuals to gain hands-on experience and contribute to the church's mission of serving the community and fostering spiritual growth.   \n\nAs an intern, you will work closely with the church staff and ministry leaders, participating in a wide range of responsibilities.   \n\nThis may include assisting with event planning and coordination, managing church communications and social media platforms, organizing and maintaining ministry resources, and providing administrative support for church programs and initiatives.   "
+                android:textFontWeight="400"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtSongster"/>
+
+            <Button
+                android:id="@+id/btnAssIntNext"
+                android:layout_width="152dp"
+                android:layout_height="58dp"
+                android:text="@string/join_min_next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

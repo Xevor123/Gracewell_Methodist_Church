@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">GraceWellChurchBotNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_Sermon" />
+    <string name="title_Events" />
+    <string name="sermons">Sermons</string>
+    <string name="contact">Contact</string>
+    <string name="events">Events</string>
+    <string name="menu">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="donations">Donations</string>
+    <string name="gracewell_methodist_church">GraceWell Methodist Church</string>
+    <string name="we_only_accept_cash_gifts_in_person_at_the_church_or_electronic_funds_transfers_in_order_to_protect_the_security_of_your_personal_information_we_regret_any_inconvenience_and_are_considering_more_payment_methods_going_forward">We only accept cash gifts in person at the church or electronic funds transfers in order to protect the security of your personal information. We regret any inconvenience and are considering more payment methods going forward.</string>
+    <string name="when_making_a_donation_you_can_specify_your_offering_in_the_additional_remarks_field_you_can_choose_from_the_options_general_peace_wave_sheaf_burnt_or_sin_offering">When making a donation, you can specify your offering in the additional remarks field. You can choose from the options general, peace, wave sheaf, burnt, or sin offering.</string>
+    <string name="please_ensure_you_double_check_the_bank_details_as_we_will_not_be_liable_if_the_money_gets_sent_to_the_wrong_account">Please ensure you double check the bank details as we will not be liable if the money gets sent to the wrong account.</string>
+    <string name="account_details">Account Details</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="nedbank">Nedbank</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="cresta">CRESTA</string>
+    <string name="_198765">198765</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="account_type">Account Type</string>
+    <string name="current_account">Current Account</string>
+    <string name="account_holder">Account Holder</string>
+    <string name="gracewell_methodist_church_account_holder">GRACEWELL METHODIST CHURCH</string>
+    <string name="account_number">Account Number</string>
+    <string name="_1176555073">1176555073</string>
+    <string name="vol_0_0">0/0</string>
+    <string name="volunteer_title">Volunteer Title</string>
+    <string name="_01_01_2000">01/01/2000</string>
+    <string name="_00_00_am_11_59_pm">00:00 AM - 11:59 PM</string>
+    <string name="food_resilience_unit">Food Resilience Unit</string>
+    <string name="vol_address">100 Christian de Wet Rd, Florida Park, Roodepoort, 2188</string>
+    <string name="community_chat">Community Chat</string>
+    <string name="menu_donations">Donations</string>
+    <string name="photos">Photos</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="about">About</string>
+    <string name="join_us">Join Us</string>
+    <string name="appointments">Appointments</string>
+    <string name="account">Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="go_back">Go Back</string>
+    <string name="vol_view_count">0/0</string>
+    <string name="volunteer_view_event_title">Volunteer Event title</string>
+    <string name="vol_view_date">Friday 28 May 2023</string>
+    <string name="vol_view_event_time">08:00 AM - 12:00 PM</string>
+    <string name="vol_view_location">Location Name</string>
+    <string name="vol_view_address">Location address</string>
+    <string name="vol_view_comments_lbl">Comments</string>
+    <string name="vol_view_comments">Comments here</string>
+    <string name="vol_view_participants_lbl">Participants</string>
+    <string name="vol_view_participants">List of Participants here</string>
+    <string name="vol_view_sign_up">Sign Up</string>
+    <string name="spacer">Spacer</string>
+    <string name="person_image">Person Image</string>
+    <string name="continue_to_next">Continue To Next</string>
+    <string name="join_min_next">Next</string>
+    <string name="join_min_intro">Welcome to GraceWell Methodist Church, a welcoming community dedicated to serving others! To begin please: \n\n1. Select the activity(s) you\'re interested in. \n2. Name : Enter your full name, this will be used as a method of identifying individuals for contacting purposes \n3. Additional Notes (optional): Feel free to share any preferences, skills, or availability constraints related to the activity. \n\nSubmit your selection, and the respective leaders of the department will contact you soon to provide further instructions and information. \n\nJoin us at GraceWell Methodist Church as we come together to make a positive impact in our community. We appreciate your interest in getting involved, and we look forward to connecting with you soon!</string>
+    <string name="join_min_menu_gteam">G-Team</string>
+    <string name="join_min_menu_songesters">Songesters</string>
+    <string name="join_min_menu_ass_int">Assistant Internship</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="cell_phone_number">Cell Phone Number</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="address">Address</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="type_additional_notes_here">Type additional notes here</string>
+    <string name="g_team">G-Team</string>
+    <string name="songster">Songster</string>
+    <string name="internship">Internship</string>
+    <string name="pastor">Pastor</string>
+    <string name="submit">Submit</string>
+    <string name="join_ministry">Join Ministry</string>
+    <string name="the_g_team_is_a_dedicated_group_within_gracewell_methodist_church_who_exemplify_the_spirit_of_service_and_compassion_comprised_of_individuals_from_various_age_groups_and_backgrounds_they_are_driven_by_a_shared_commitment_to_making_a_positive_impact_on_the_community_n_n_nthe_g_team_actively_engage_in_a_wide_range_of_outreach_activities_such_as_volunteering_at_local_homeless_shelters_organizing_food_drives_and_participating_in_community_clean_up_initiatives_n_n_nthey_also_extend_their_support_to_marginalized_groups_partnering_with_organizations_to_provide_educational_resources_job_training_and_mentorship_programs">The G-Team is a dedicated group within GraceWell Methodist Church who exemplify the spirit of service and compassion. Comprised of individuals from various age groups and backgrounds, they are driven by a shared commitment to making a positive impact on the community. \n\n\nThe G-Team actively engage in a wide range of outreach activities, such as volunteering at local homeless shelters, organizing food drives, and participating in community clean-up initiatives. \n\n\nThey also extend their support to marginalized groups, partnering with organizations to provide educational resources, job training, and mentorship programs.</string>
+    <string name="assistant_internship">Assistant Internship</string>
+    <string name="title_activity_donations">DonationsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="church_logo">Church logo</string>
+    <string name="title_activity_join_ministry">JoinMinistryActivity</string>
+    <string name="songsters_is_a_vibrant_and_talented_musical_group_within_gracewell_methodist_church_composed_of_passionate_singers_and_instrumentalists_they_use_the_power_of_music_to_uplift_spirits_inspire_worship_and_deepen_the_spiritual_experience_of_the_congregation_n_ntheir_harmonious_melodies_and_heartfelt_performances_create_an_atmosphere_of_praise_and_worship_during_church_services_bringing_a_sense_of_joy_and_unity_to_the_community_n_nthey_lead_the_congregation_in_hymns_contemporary_worship_songs_and_special_musical_presentations_that_touch_hearts_and_invite_a_deeper_connection_with_god_n_nwhether_it_is_through_powerful_solos_captivating_harmonies_or_uplifting_instrumentals_songsters_adds_a_melodic_dimension_to_the_worship_experience_fostering_an_environment_where_individuals_can_encounter_the_divine_through_the_gift_of_music">Songsters is a vibrant and talented musical group within GraceWell Methodist Church. Composed of passionate singers and instrumentalists, they use the power of music to uplift spirits, inspire worship, and deepen the spiritual experience of the congregation. \n\nTheir harmonious melodies and heartfelt performances create an atmosphere of praise and worship during church services, bringing a sense of joy and unity to the community. \n\nThey lead the congregation in hymns, contemporary worship songs, and special musical presentations that touch hearts and invite a deeper connection with God. \n\nWhether it is through powerful solos, captivating harmonies, or uplifting instrumentals, Songsters adds a melodic dimension to the worship experience, fostering an environment where individuals can encounter the divine through the gift of music.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string-array name="post_type">
+        <item>News</item>
+        <item>Volunteer</item>
+        <item>Events</item>
+        <item>Photos</item>
+        <item>Requests</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sermons"
+        android:icon="@drawable/baseline_mic_24"
+        android:title="@string/sermons" />
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/baseline_contact_page_24"
+        android:title="@string/contact" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/baseline_calendar_today_24"
+        android:title="@string/events" />
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/baseline_menu_24"
+        android:title="@string/menu" />
+
+</menu>
