@@ -65,8 +65,6 @@ public class AdminAddVolunteerActivity extends AppCompatActivity {
                     volDate.getText();
                     volStart.getText();
                     volEnd.getText();
-
-                    
                 }
             }
         });
