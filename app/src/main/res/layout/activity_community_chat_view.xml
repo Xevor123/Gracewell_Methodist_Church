@@ -9,10 +9,71 @@
         android:id="@+id/main_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/bottom_navigation"
+        android:layout_above="@id/messageBar"
+        android:layout_alignParentTop="true"
         >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCommChatPostTitle"
+            android:text="Title here"/>
+
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/messageBar"
+        android:layout_above="@id/bottom_navigation">
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_emoji_emotions_24"
+            android:id="@+id/btnEmoji"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"/>
+    
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTypeChat"
+            android:hint="Type Comment here"
+            android:background="@drawable/rounded_edittext_background"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/btnEmoji"
+            android:layout_toLeftOf="@id/btnAttachFile"
+            android:layout_centerInParent="true"
+            />
+   
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_attach_file_24"
+            android:id="@+id/btnAttachFile"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/btnSendButton"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_send_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:id="@+id/btnSendButton"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
