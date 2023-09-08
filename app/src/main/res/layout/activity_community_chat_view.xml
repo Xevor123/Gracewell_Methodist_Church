@@ -13,11 +13,117 @@
         android:layout_alignParentTop="true"
         >
 
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtCommChatPostTitle"
-            android:text="Title here"/>
+            android:id="@+id/MainBlog"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/baseline_outlined_flag_24"
+                android:id="@+id/btnReport"
+                android:layout_toLeftOf="@id/txtPostType"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostType"
+                android:text="Post Type"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitle"
+                android:text="Title here"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtContent"
+                android:text="Content Here"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtTitle"
+                android:layout_toRightOf="@id/btnReport"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_share_24"
+                android:id="@+id/btnSharePost"
+                android:layout_below="@id/txtContent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentLeft="true"
+                />
+            
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_comment_24"
+                android:id="@+id/imgComment"
+                android:layout_toRightOf="@id/btnSharePost"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCommentCount"
+                android:text="Comment Count"
+                android:layout_toRightOf="@id/imgComment"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostedTime"
+                android:text="Posted At"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_access_time_24"
+                android:id="@+id/imgPostedTime"
+                android:layout_toLeftOf="@id/txtPostedTime"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAuthor"
+                android:text="Author Here"
+                android:layout_toLeftOf="@id/imgPostedTime"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblAuthor"
+                android:text="By:"
+                android:layout_toLeftOf="@id/txtAuthor"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                />
+
+        </RelativeLayout>
 
     </ScrollView>
 
