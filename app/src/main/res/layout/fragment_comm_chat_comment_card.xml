@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/CommentCard"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtComAuthor"
+        android:text="Author Here"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtComPostedTime"
+        android:text="Time since post"
+        android:layout_toRightOf="@id/txtComAuthor"
+        android:layout_alignParentTop="true"/>
+
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/baseline_outlined_flag_24"
+        android:id="@+id/btnComReport"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtComContent"
+        android:text="Comment Content here"
+        android:layout_below="@id/btnComReport"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/baseline_share_24"
+        android:id="@+id/btnComShare"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtComContent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+    
+</RelativeLayout>
+
