@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_alignParentTop="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtVolunteerForm"
+                android:text="Volunteer Form"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblVolunteerEventType"
+                android:text="What Volunteer Event types would you like to do?"
+                app:layout_constraintTop_toBottomOf="@id/txtVolunteerForm"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkFoodbank"
+                android:text="Food Bank: help the church deliver food to foodbanks"
+                app:layout_constraintTop_toBottomOf="@id/lblVolunteerEventType"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkAnimalHandling"
+                android:text="Animal Handling: help animal handling organisations with what ever work they need help with"
+                app:layout_constraintTop_toBottomOf="@id/chkFoodbank"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkCleanUp"
+                android:text="Clean Up: assist the church with clean up jobs and general community cleanup"
+                app:layout_constraintTop_toBottomOf="@id/chkAnimalHandling"
+                app:layout_constraintStart_toStartOf="@id/chkAnimalHandling"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblAvailableDays"
+                android:text="What days are you available for these volunteer events?"
+                app:layout_constraintTop_toBottomOf="@id/chkCleanUp"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkMonday"
+                android:text="Monday"
+                app:layout_constraintTop_toBottomOf="@id/lblAvailableDays"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkTuesday"
+                android:text="Tuesday"
+                app:layout_constraintTop_toBottomOf="@id/chkMonday"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkWednesday"
+                android:text="Wednesday"
+                app:layout_constraintTop_toBottomOf="@id/chkTuesday"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkThursday"
+                android:text="Thursday"
+                app:layout_constraintTop_toBottomOf="@id/chkWednesday"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkFriday"
+                android:text="Friday"
+                app:layout_constraintTop_toBottomOf="@id/chkThursday"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkSaturday"
+                android:text="Saturday"
+                app:layout_constraintTop_toBottomOf="@id/chkFriday"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkSunday"
+                android:text="Sunday"
+                app:layout_constraintTop_toBottomOf="@id/chkSaturday"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <Button
+                android:id="@+id/btnVolunteerSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chkSunday"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

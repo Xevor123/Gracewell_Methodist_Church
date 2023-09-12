@@ -8,6 +8,8 @@ import com.example.gracewellchurchbotnav.R;
 
 public class CommunityChatView extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
