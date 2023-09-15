@@ -1,6 +1,7 @@
 package com.example.gracewellchurchbotnav.ui.CommunityChat;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -20,7 +21,6 @@ public class CommunityChatActivity extends AppCompatActivity {
 
     Button btnCreatePost;
     RecyclerView recyclerView;
-
     CommChatAdapter adapter;
 
     @Override
@@ -42,7 +42,7 @@ public class CommunityChatActivity extends AppCompatActivity {
 
     void setupCommChatRecyclerView(){
         adapter = new CommChatAdapter(, getApplicationContext());
-        recyclerView.setLayoutManager(new RecyclerView.LayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         adapter.startListening();
     }

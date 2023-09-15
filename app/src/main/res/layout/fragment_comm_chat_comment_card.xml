@@ -20,7 +20,8 @@
         android:id="@+id/txtComPostedTime"
         android:text="Time since post"
         android:layout_toRightOf="@id/txtComAuthor"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"/>
 
     <ImageButton
         android:layout_width="36dp"

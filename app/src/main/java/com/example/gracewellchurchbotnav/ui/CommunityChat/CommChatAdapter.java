@@ -14,7 +14,7 @@ import com.example.gracewellchurchbotnav.R;
 
 import java.util.ArrayList;
 
-public class CommChatAdapter /*extends firebase database(recycler adapter - Comm Chat DB, CommChatAdapter.CommChatViewHolder)*/{
+public class CommChatAdapter extends RecyclerView.Adapter /*extends firebase database(recycler adapter - Comm Chat DB, CommChatAdapter.CommChatViewHolder)*/{
 
 
     Context context;
@@ -37,6 +37,16 @@ public class CommChatAdapter /*extends firebase database(recycler adapter - Comm
     public CommChatViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
         View view = LayoutInflater.from(context).inflate(R.layout.fragment_comm_chat_row,parent,false);
         return new CommChatViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
     }
 
     class CommChatViewHolder extends RecyclerView.ViewHolder{
