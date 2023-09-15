@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:elevation="5dp"
+    android:background="@drawable/border">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommChatTitle"
+        android:text="Comm Chat Title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommChatType"
+        android:text="Comm Chat Type"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommChatContent"
+        android:text="Content here"
+        android:layout_below="@id/txtCommChatTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:maxLines="4"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgCommChatComment"
+        android:src="@drawable/baseline_comment_24"
+        android:layout_below="@id/txtCommChatContent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommChatCommentCount"
+        android:text="Comment Number Here"
+        android:layout_below="@id/txtCommChatContent"
+        android:layout_toRightOf="@id/imgCommChatComment"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommChatActive"
+        android:text="Last Active"
+        android:layout_below="@id/txtCommChatContent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgCommChatLastActive"
+        android:src="@drawable/baseline_access_time_24"
+        android:layout_toLeftOf="@id/txtCommChatActive"
+        android:layout_below="@id/txtCommChatContent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommChatAuthor"
+        android:text="Author"
+        android:layout_below="@id/txtCommChatContent"
+        android:layout_toLeftOf="@id/imgCommChatLastActive"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCommChatAuthor"
+        android:text="By:   "
+        android:layout_toLeftOf="@id/txtCommChatAuthor"
+        android:layout_below="@id/txtCommChatContent"/>
+
+</RelativeLayout>
