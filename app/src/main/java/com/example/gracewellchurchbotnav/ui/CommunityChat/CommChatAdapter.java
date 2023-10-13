@@ -11,62 +11,54 @@ import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gracewellchurchbotnav.R;
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
 import java.util.ArrayList;
 
-public class CommChatAdapter extends RecyclerView.Adapter /*extends firebase database(recycler adapter - Comm Chat DB, CommChatAdapter.CommChatViewHolder)*/{
-
+public class CommChatAdapter extends FirestoreRecyclerAdapter<CommChatData, CommChatAdapter.CommChatDataViewHolder> {
 
     Context context;
 
-    public CommChatAdapter(/* @NonNull FirebaseDatabase-RecyclerOptions<CommunityChat> options,*/Context context) {
-        //super(options);
+    public CommChatAdapter(@NonNull FirestoreRecyclerOptions<CommChatData> options, Context context) {
+        super(options);
         this.context = context;
     }
 
-    public void onBindViewHolder(@NonNull CommChatViewHolder holder, int position, @NonNull CommunityChat chat){
-        holder.title.setText(chat.getTitle());
-        holder.content.setText(chat.getContent());
-        holder.type.setText(chat.getType());
-        holder.comCount.setText(chat.getCommentCount());
-        holder.author.setText(chat.getAuthor());
-        holder.posted.setText(chat.getPosted());
+    @Override
+    protected void onBindViewHolder(@NonNull CommChatDataViewHolder holder, int position, @NonNull CommChatData data) {
+        holder.comTitle.setText(data.getTitle());
+        holder.comType.setText(data.getType());
+        holder.comContent.setText(data.getContent());
+        holder.comAuthor.setText(data.getContent());
+        holder.comCommentNumber.setText(data.getCommentNumber());
+        holder.comTime.setText(data.getPostedTime().toString());
     }
 
-
-    public CommChatViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
+    @NonNull
+    @Override
+    public CommChatDataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.fragment_comm_chat_row,parent,false);
-        return new CommChatViewHolder(view);
+        return new CommChatDataViewHolder(view);
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    class CommChatDataViewHolder extends RecyclerView.ViewHolder{
+        TextView comTitle;
+        TextView comType;
+        TextView comContent;
+        TextView comAuthor;
+        TextView comTime;
+        TextView comCommentNumber;
 
-    }
-
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
-
-    class CommChatViewHolder extends RecyclerView.ViewHolder{
-
-        TextView title;
-        TextView content;
-        TextView comCount;
-        TextView type;
-        TextView posted;
-        TextView author;
-
-        public CommChatViewHolder(@NonNull View itemView) {
+        public CommChatDataViewHolder(@NonNull View itemView){
             super(itemView);
-
-            title = itemView.findViewById(R.id.txtCommChatTitle);
-            content = itemView.findViewById(R.id.txtCommChatContent);
-            comCount = itemView.findViewById(R.id.txtCommChatCommentCount);
-            type = itemView.findViewById(R.id.txtCommChatType);
-            posted = itemView.findViewById(R.id.txtCommChatActive);
-            author = itemView.findViewById(R.id.txtCommChatAuthor);
+            comTitle = itemView.findViewById(R.id.txtCommChatTitle);
+            comType = itemView.findViewById(R.id.txtCommChatType);
+            comContent = itemView.findViewById(R.id.txtCommChatContent);
+            comAuthor = itemView.findViewById(R.id.txtCommChatAuthor);
+            comTime = itemView.findViewById(R.id.txtCommChatActive);
+            comCommentNumber = itemView.findViewById(R.id.txtCommChatCommentCount);
         }
+
     }
 }

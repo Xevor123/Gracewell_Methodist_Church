@@ -7,13 +7,16 @@
     android:background="@drawable/border">
 
     <TextView
+        android:id="@+id/txtCommChatTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtCommChatTitle"
-        android:text="Comm Chat Title"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_margin="5dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Comm Chat Title" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,13 +57,16 @@
         android:layout_marginLeft="5dp"/>
 
     <TextView
+        android:id="@+id/txtCommChatActive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtCommChatActive"
-        android:text="Last Active"
         android:layout_below="@id/txtCommChatContent"
         android:layout_alignParentRight="true"
-        android:layout_margin="5dp"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Last Active" />
 
     <ImageView
         android:layout_width="24dp"

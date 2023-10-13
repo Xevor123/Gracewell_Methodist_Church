@@ -27,12 +27,6 @@ public class GTeamActivity extends AppCompatActivity {
             if (savedInstanceState != null) {
                 return;
             }
-
-            // Create a new fragment instance
-            JoinMinistryMainFragment myFragment = new JoinMinistryMainFragment();
-
-            // Add the fragment to the container
-            getSupportFragmentManager().beginTransaction().add(R.id.main_activity, myFragment).commit();
         }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -47,6 +41,18 @@ public class GTeamActivity extends AppCompatActivity {
                 {
                     showPopupMenu(bottomNavigationView);
                     return true;
+                }
+                if (itemID == R.id.txtGteam){
+                    Intent intent = new Intent(GTeamActivity.this, GTeamActivity.class);
+                    startActivity(intent);
+                }
+                if (itemID == R.id.txtSongster || itemID == R.id.btnGTeamNext){
+                    Intent intent = new Intent(GTeamActivity.this, SongsterActivity.class);
+                    startActivity(intent);
+                }
+                if (itemID == R.id.txtAssInt){
+                    Intent intent = new Intent(GTeamActivity.this, AssistantInternshipActivity.class);
+                    startActivity(intent);
                 }
                 return false;
             }

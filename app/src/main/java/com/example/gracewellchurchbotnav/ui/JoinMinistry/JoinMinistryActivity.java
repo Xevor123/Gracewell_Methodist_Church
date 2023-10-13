@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.PopupMenu;
 
 import com.example.gracewellchurchbotnav.R;
@@ -29,13 +31,16 @@ public class JoinMinistryActivity extends AppCompatActivity {
             if (savedInstanceState != null) {
                 return;
             }
-
-            // Create a new fragment instance
-            JoinMinistryMainFragment myFragment = new JoinMinistryMainFragment();
-
-            // Add the fragment to the container
-            getSupportFragmentManager().beginTransaction().add(R.id.main_activity, myFragment).commit();
         }
+
+        Button next = findViewById(R.id.btnJoinMinHomeNext);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinMinistryActivity.this, GTeamActivity.class);
+                startActivity(intent);
+            }
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setLabelVisibilityMode(NavigationBarView.LABEL_VISIBILITY_LABELED);
