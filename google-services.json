@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "373455644093",
+    "firebase_url": "https://gracewelldatabase-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gracewelldatabase",
+    "storage_bucket": "gracewelldatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373455644093:android:a3cbaf5bdf96e21295ded4",
+        "android_client_info": {
+          "package_name": "com.example.gracewellchurchbotnav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373455644093-5p6tr9qjajicigni1bsskoqehqjfldqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9RonXZycbMEEcbfCTYBTgIj2gJ8gk9fc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373455644093-5l9cdkde50uje2cp8cb1rq84b8gamqko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373455644093:android:c4cf97b90f5f483495ded4",
+        "android_client_info": {
+          "package_name": "com.example.mymethodistapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373455644093-5p6tr9qjajicigni1bsskoqehqjfldqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9RonXZycbMEEcbfCTYBTgIj2gJ8gk9fc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373455644093-5l9cdkde50uje2cp8cb1rq84b8gamqko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373455644093:android:ab2ad0c558f1c68c95ded4",
+        "android_client_info": {
+          "package_name": "com.example.mymethodistapplication2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373455644093-vflu6qht6nm7gmesgc9easlsa1n0p8f0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mymethodistapplication2",
+            "certificate_hash": "1be52194c7f509875266b81a8cc0a4e36898cfa5"
+          }
+        },
+        {
+          "client_id": "373455644093-5p6tr9qjajicigni1bsskoqehqjfldqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9RonXZycbMEEcbfCTYBTgIj2gJ8gk9fc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373455644093-5l9cdkde50uje2cp8cb1rq84b8gamqko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

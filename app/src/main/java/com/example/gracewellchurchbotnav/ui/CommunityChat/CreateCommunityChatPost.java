@@ -28,6 +28,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -89,9 +90,10 @@ public class CreateCommunityChatPost extends AppCompatActivity implements Adapte
         int comment = 0;
         String commAuthor = author.toString();
         String chatID = UUID.randomUUID().toString();
-        Date date = Calendar.getInstance().getTime();
+        LocalDateTime date = LocalDateTime.now();
         SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String currentDate = simpleDate.format(date);
+        String authId = mAuth.getInstance().getUid();
 
         Map<String, Object> chat = new HashMap<>();
         chat.put("Title", title);
@@ -99,7 +101,9 @@ public class CreateCommunityChatPost extends AppCompatActivity implements Adapte
         chat.put("Content", content);
         chat.put("Comment Number", comment);
         chat.put("Author", commAuthor);
+        chat.put("Author Id", authId);
         chat.put("Time Posted", currentDate);
+
 
         db.collection("CommChatPosts").document(chatID).set(chat)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {

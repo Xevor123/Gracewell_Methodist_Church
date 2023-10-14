@@ -1,11 +1,5 @@
 package com.example.gracewellchurchbotnav.ui.CommunityChat;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -13,21 +7,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gracewellchurchbotnav.R;
-
 import com.example.gracewellchurchbotnav.ui.JoinMinistry.AssistantInternshipActivity;
 import com.example.gracewellchurchbotnav.ui.JoinMinistry.GTeamActivity;
 import com.example.gracewellchurchbotnav.ui.JoinMinistry.JoinMinistryActivity;
 import com.example.gracewellchurchbotnav.ui.JoinMinistry.SongsterActivity;
 import com.example.gracewellchurchbotnav.ui.Volunteer.VolunteerActivity;
 import com.example.gracewellchurchbotnav.ui.donations.DonationsActivity;
-import com.example.gracewellchurchbotnav.ui.utils.FirebaseUtil;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -35,6 +27,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
 public class CommunityChatActivity extends AppCompatActivity {
+
+    CommChatData chat;
     RecyclerView recyclerView = findViewById(R.id.CommChatRecyclerView);
     Button btnCreatePost;
     CommChatAdapter adapter;
@@ -44,10 +38,7 @@ public class CommunityChatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_community_chat);
 
-
-
         btnCreatePost = findViewById(R.id.btnCommChatCreatePost);
-
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

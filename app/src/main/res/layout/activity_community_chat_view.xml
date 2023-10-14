@@ -22,162 +22,163 @@
             android:padding="10dp"
             >
 
-            <ImageButton
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/baseline_outlined_flag_24"
-                android:id="@+id/btnReport"
-                android:layout_toLeftOf="@id/txtPostType"
-                android:layout_alignParentTop="true"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="8dp"/>
+            <!-- <ImageButton
+                 android:layout_width="36dp"
+                 android:layout_height="36dp"
+                 android:src="@drawable/baseline_outlined_flag_24"
+                 android:id="@+id/btnReport"
+                 android:layout_toLeftOf="@id/txtPostType"
+                 android:layout_alignParentTop="true"
+                 android:background="?attr/selectableItemBackgroundBorderless"
+                 android:padding="8dp"/> -->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtPostType"
-                android:text="Post Type"
-                android:layout_alignParentRight="true"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txtPostType"
+                 android:text="Post Type"
+                 android:layout_alignParentRight="true"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtTitle"
-                android:text="Title here"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txtTitle"
+                 android:text="Title here"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentLeft="true"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtContent"
-                android:text="Content Here"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@id/txtTitle"
-                android:layout_toRightOf="@id/btnReport"
-                android:layout_marginBottom="10dp"/>
-            
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/baseline_comment_24"
-                android:id="@+id/imgComment"
-                android:layout_below="@id/txtContent"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="10dp"
-                />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txtContent"
+                 android:text="Content Here"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@id/txtTitle"
+                 android:layout_toRightOf="@id/txtPostType"
+                 android:layout_marginBottom="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCommentCount"
-                android:text="Comment Count"
-                android:layout_toRightOf="@id/imgComment"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="5dp"
-                />
+             <ImageView
+                 android:layout_width="24dp"
+                 android:layout_height="24dp"
+                 android:src="@drawable/baseline_comment_24"
+                 android:id="@+id/imgComment"
+                 android:layout_below="@id/txtContent"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginLeft="10dp"
+                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtPostedTime"
-                android:text="Posted At"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txtCommentCount"
+                 android:text="Comment Count"
+                 android:layout_toRightOf="@id/imgComment"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginLeft="5dp"
+                 />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/baseline_access_time_24"
-                android:id="@+id/imgPostedTime"
-                android:layout_toLeftOf="@id/txtPostedTime"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="5dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txtPostedTime"
+                 android:text="Posted At"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true"
+                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtAuthor"
-                android:text="Author Here"
-                android:layout_toLeftOf="@id/imgPostedTime"
-                android:layout_alignParentBottom="true"/>
+             <ImageView
+                 android:layout_width="24dp"
+                 android:layout_height="24dp"
+                 android:src="@drawable/baseline_access_time_24"
+                 android:id="@+id/imgPostedTime"
+                 android:layout_toLeftOf="@id/txtPostedTime"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginRight="5dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/lblAuthor"
-                android:text="By:"
-                android:layout_toLeftOf="@id/txtAuthor"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="5dp"
-                />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/txtAuthor"
+                 android:text="Author Here"
+                 android:layout_toLeftOf="@id/imgPostedTime"
+                 android:layout_alignParentBottom="true"/>
 
-        </RelativeLayout>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/lblAuthor"
+                 android:text="By:"
+                 android:layout_toLeftOf="@id/txtAuthor"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginRight="5dp"
+                 />
 
-    </ScrollView>
+         </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:id="@+id/messageBar"
-        android:layout_above="@id/bottom_navigation">
+     </ScrollView>
 
-        <ImageButton
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/baseline_emoji_emotions_24"
-            android:id="@+id/btnEmoji"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true"/>
-    
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtTypeChat"
-            android:hint="Type Comment here"
-            android:background="@drawable/rounded_edittext_background"
-            android:padding="10dp"
-            android:elevation="4dp"
-            android:layout_margin="5dp"
-            android:layout_toRightOf="@id/btnEmoji"
-            android:layout_toLeftOf="@id/btnAttachFile"
-            android:layout_centerInParent="true"
-            />
-   
-        <ImageButton
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/baseline_attach_file_24"
-            android:id="@+id/btnAttachFile"
-            android:layout_margin="5dp"
-            android:layout_toLeftOf="@id/btnSendButton"
-            android:layout_centerInParent="true"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-        
-        <ImageButton
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/baseline_send_24"
-            android:layout_alignParentEnd="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="5dp"
-            android:id="@+id/btnSendButton"
-            android:padding="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            />
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="8dp"
+         android:id="@+id/messageBar"
+         android:layout_above="@id/bottom_navigation">
 
-    </RelativeLayout>
+         <!-- <ImageButton
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:src="@drawable/baseline_emoji_emotions_24"
+              android:id="@+id/btnEmoji"
+              android:background="?attr/selectableItemBackgroundBorderless"
+              android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"/> -->
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/bottom_navigation"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        app:menu="@menu/bottom_nav_menu"/>
+         <EditText
+             android:id="@+id/txtTypeChat"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginStart="5dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_marginBottom="5dp"
+             android:layout_toLeftOf="@id/btnSendButton"
+             android:background="@drawable/rounded_edittext_background"
+             android:elevation="4dp"
+             android:hint="Type Comment here"
+             android:padding="10dp" />
 
-</RelativeLayout>
+         <!--<ImageButton
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:src="@drawable/baseline_attach_file_24"
+             android:id="@+id/btnAttachFile"
+             android:layout_margin="5dp"
+             android:layout_toLeftOf="@id/btnSendButton"
+             android:layout_centerInParent="true"
+             android:background="?attr/selectableItemBackgroundBorderless"/>-->
+
+         <ImageButton
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:src="@drawable/baseline_send_24"
+             android:layout_alignParentEnd="true"
+             android:layout_centerInParent="true"
+             android:layout_marginStart="5dp"
+             android:id="@+id/btnSendButton"
+             android:padding="8dp"
+             android:background="?attr/selectableItemBackgroundBorderless"
+             />
+
+     </RelativeLayout>
+
+     <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:id="@+id/bottom_navigation"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         app:menu="@menu/bottom_nav_menu"/>
+
+ </RelativeLayout>

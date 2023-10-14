@@ -72,7 +72,7 @@ public class JoinMinFormActivity extends AppCompatActivity {
         txtAddNotes = findViewById(R.id.txtJoinMinFormAddNotes);
         btnJobs = findViewById(R.id.btnGrpJoinMinChoices);
         btnSubmit = findViewById(R.id.btnJoinMinFormSubmit);
-        GracewellJoinMinistryDB = FirebaseDatabase.getInstance().getReference().child("GracewellJoinMinistryDB");
+        //GracewellJoinMinistryDB = FirebaseDatabase.getInstance().getReference().child("GracewellJoinMinistryDB");
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,9 +95,9 @@ public class JoinMinFormActivity extends AppCompatActivity {
         String AdditionalNotes = txtAddNotes.getText().toString();
         String JobChoice = btnSelectedJob.getText().toString();
 
-        GracewellJoinMinistryDB GracewellJoinMinistryDB = new GracewellJoinMinistryDB(FullName, Email, Cellphone, DateOfBirth, Address, AdditionalNotes, JobChoice);
+       //GracewellJoinMinistryDB GracewellJoinMinistryDB = new GracewellJoinMinistryDB(FullName, Email, Cellphone, DateOfBirth, Address, AdditionalNotes, JobChoice);
 
-        GracewellJoinMinistryDB.push().setValue(GracewellJoinMinistryDB);
+        //GracewellJoinMinistryDB.push().setValue(GracewellJoinMinistryDB);
 
         Toast.makeText(this, "Form has been Submitted", Toast.LENGTH_SHORT).show();
         saveJoinMinForm(FullName, Email, Cellphone, DateOfBirth, Address, AdditionalNotes, JobChoice);
